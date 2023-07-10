@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: rgb(255, 254, 254);
+            font-family: 'Poppins', sans-serif;
+            background-image: url(Images/bodybg.jpg);
+            background-repeat: no-repeat;
+            background-position: absolute;
+        }
+
+
+
+        .Slogo {
+            margin-bottom: auto;
+            margin-right: auto;
+
+        }
+
+        .logo {
+            position: relative;
+            height: 70px;
+            width: 70px;
+            top: -32px;
+        }
+
+
+        .container {
+            min-height: 100vh;
+            background-image: url('Images/bodybg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container form {
+            width: 800px;
+            height: 500px;
+            display: flex;
+            margin-top: 1%;
+            margin-left: 20%;
+            justify-content: center;
+            box-shadow: 20px 20px 20px rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            background: rgba(218, 153, 153, 0.1);
+            backdrop-filter: blur(6px);
+            flex-wrap: wrap;
+
+        }
+
+        .container form h1 {
+            font-weight: 500;
+            margin-top: 20px;
+            width: 600px;
+            text-align: center;
+        }
+
+        .container form input {
+            width: 300px;
+            height: 40px;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            margin-bottom: 10px;
+            background: none;
+            border-bottom: 2px solid white;
+        }
+
+        .container form input::placeholder {
+            color: white;
+        }
+
+        .container form #email {
+            margin-left: 20px;
+        }
+
+        .container form textarea {
+            background: none;
+            border: none;
+            border-bottom: 2px solid white;
+            color: white;
+            font-weight: 200;
+            font-size: 15px;
+            padding: 10px;
+            outline: none;
+            min-width: 600px;
+            max-width: 600px;
+            min-height: 80px;
+            max-height: 80px;
+
+
+        }
+
+        textarea::-webkit-scrollbar {
+            width: 1em;
+        }
+
+        textarea::-webkit-scrollbar-thumb {
+            background-color: darkgray;
+        }
+
+        .container form #button {
+            border: none;
+            background-color: white;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-weight: 400;
+            color: black;
+            width: 300px;
+            padding: 0;
+            margin-right: 50px;
+            margin-bottom: 30px;
+            transition: 0.3s;
+            opacity: 80%;
+        }
+
+        .container form #button:hover {
+            opacity: 0.7;
+
+        }
+
+        footer {
+            background-color: rgb(59, 59, 85);
+            height: 60px;
+            color: white;
+            padding-top: 40px;
+            padding-left: 50px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        @media screen and (max-width: 600px) {
+
+
+            .Slogo {
+                margin-bottom: auto;
+                margin-right: auto;
+                height: 1px;
+                width: 1px;
+
+            }
+
+            .logo {
+                position: relative;
+                height: 50px;
+                width: 50px;
+            }
+
+
+            .container {
+                min-height: 70vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container form {
+                width: 350px;
+                height: 440px;
+                display: flex;
+                margin-top: 1%;
+                margin-left: 20%;
+                justify-content: center;
+                box-shadow: 20px 20px 20px rgba(255, 255, 255, 0.5);
+                border-radius: 20px;
+                background: rgba(218, 153, 153, 0.1);
+                backdrop-filter: blur(8px);
+                flex-wrap: wrap;
+                font-size: 10px;
+
+            }
+
+            .container form h1 {
+                font-weight: 100;
+                margin-top: 10px;
+                width: 290px;
+                text-align: center;
+                font-size: 15px;
+            }
+
+            .container form input {
+                width: 150px;
+                height: 20px;
+                padding-left: 5px;
+                outline: none;
+                border: none;
+                font-size: 10px;
+                margin-bottom: 5px;
+                background: none;
+                border-bottom: 2px solid white;
+            }
+
+            .container form input::placeholder {
+                color: white;
+            }
+
+            .container form #email {
+                margin-left: 10px;
+            }
+
+            .container form textarea {
+                background: none;
+                border: none;
+                border-bottom: 2px solid white;
+                color: white;
+                font-weight: 100;
+                font-size: 10px;
+                padding: 5px;
+                outline: none;
+                min-width: 100px;
+                max-width: 155px;
+                min-height: 3px;
+                max-height: 32px;
+
+
+            }
+
+            textarea::-webkit-scrollbar {
+                width: 1em;
+            }
+
+            textarea::-webkit-scrollbar-thumb {
+                background-color: darkgray;
+            }
+
+            label {
+                margin: 10px;
+                position: relative;
+                left: -10px;
+            }
+
+            .container form #button {
+                border: none;
+                background-color: white;
+                border-radius: 8px;
+                margin-top: 10px;
+                font-weight: 200;
+                color: black;
+                width: 110px;
+                padding: 0;
+                margin-right: 19px;
+                margin-bottom: 6px;
+                transition: 0.3s;
+                opacity: 80%;
+            }
+
+            .container form #button:hover {
+                opacity: 0.7;
+
+            }
+
+            footer {
+                background-color: rgb(59, 59, 85);
+                height: 120px;
+                color: white;
+                padding-top: 50px;
+                padding-left: 23px;
+                font-size: 10px;
+                width: 474px;
+                position: relative;
+                bottom: -485px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <span class="Slogo"><img src="Images/SLetter.png" class="logo"></span>
+
+
+        <form action="POST" data-netlify="true">
+            <h1>Get In Touch</h1>
+
+            <input type="text" id="name" name="name" placeholder="Provide Your Name" required>
+
+            <input type="email" id="email" name="email" placeholder="Provide your mail" required>
+
+            <label for="message">Type Your Message Here...</label>
+            <textarea id="message" name="message" required cols="40" rows="10"></textarea>
+
+            <input type="submit" value="Send" id="button">
+
+        </form>
+    </div>
+
+
+    <!-- footer -->
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer first">
+                <h3>Copyright &copy; Shreya Srivastava 2023 </h3>
+            </div>
+            <div class="footer second"><a href="https://github.com/shreyasri01"><img src="Images/github.png"
+                        height="40px" width="40px"></a></div>
+            <div class="footer third"><a href="https://www.linkedin.com/in/srivastavashreya01/"><img
+                        src="Images/linkedin.png" height="30px" width="30px"></a></div>
+            <div class="footer fourth"><a href="mailto: sreevastavashreya@gmail.com"><img src="Images/mail.png"
+                        height="30px" width="30px"></a></div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
